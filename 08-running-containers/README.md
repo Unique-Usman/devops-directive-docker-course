@@ -17,6 +17,8 @@ make docker-build-all
 make docker-run-all
 ```
 
+Automatically Generate Docker Compose Configuration: https://github.com/magicmark/composerize
+
 ***Note:*** Because the Dockerfiles and application source code are located in different directories, the build commands appear more complicated than they actually are. Generally the Dockerfile would live alongside the application and the command would be more like `docker build -t <TAG> .` (and docker defaults to choosing the Dockerfile in the local directory).
 
 You will notice that each of the run commands has a bunch of options used to ensure the configuration works properly.
